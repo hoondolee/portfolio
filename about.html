@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About — DLee</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1>DLee</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="sidequests.html">Side Quests</a>
+<a href="about.html">About</a>
+</nav>
+</header>
+<main>
+<h2>About</h2>
+<p>
+I am a current junior at Carnegie Mellon University studying Business
+with a concentration in Marketing Management and a minor in Human-Computer Interaction.
+Interested in marketing, user interface/design, and social media.
+</p>
+<p>I grew up in Koreatown Los Angeles raised in a traditional Korean household. I had the stereotypical expectations: get into a top 20 school, become a doctor, and put family first. However, I came to realize why they placed those expectations on me. They struggled while being first-generation immigrants so they could build the foundation on which I can thrive. So take a look as I navigate college and go on side quests to fulfill my curiosities and give back to those who gave me so much more.</p>
+<a href = "https://www.linkedin.com/in/dohoon-lee-236ab1290" target = "_blank" rel = "noopener" class = "btn"> Connect with Me </a>
+<a href = "Resume_Dohoon_Lee.pdf" target = "_blank" rel = "noopener" class = "btn"> View my Resume </a>
+</main>
+<footer>©dlee061505@gmail.com</footer>
+<script>window.addEventListener("load", () => {
+    document.body.classList.add("page-loaded");
+});
+
+document.addEventListener("click", e => {
+    const link = e.target.closest("a");
+    if (!link) return;
+
+    const href = link.getAttribute("href");
+    if (!href || href.startsWith("#") || href.startsWith("http")) return;
+
+    e.preventDefault();
+    document.body.classList.remove("page-loaded");
+
+    setTimeout(() => {
+        window.location.href = href;
+    }, 350);
+});
+</script>
+</body>
+</html>
