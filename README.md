@@ -1,5 +1,5 @@
 # Personal Portfolio Website
-Live Site: https://hoondolee.github.io
+Live Site: https://hoondolee.github.io/portfolio/
 
 ## Description
 This is my personal HTML/CSS portfolio showcasing my projects and work.
